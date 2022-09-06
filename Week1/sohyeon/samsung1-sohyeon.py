@@ -1,5 +1,3 @@
-print(int(0.175))
-
 c = int(input())
 land = [list(map(int, input().split())) for _ in range(c)]
 
@@ -66,7 +64,7 @@ while 1:
   # 2%
   c1, c2 = percentTwo(x, y)
   out += tornado(n, m, c1, c2, 0.02)
-  sand += int(land[n][m]*0.02)
+  sand += 2 * int(land[n][m]*0.02)
 
   # a
   if 0<=n+x<c and 0<=m+y<c : land[n+x][m+y] += land[n][m]-sand
@@ -74,7 +72,7 @@ while 1:
 
   land[n][m] = 0
 
-  if n==0 and m==1 : break
+  if n==0 and m==0 : break
 
   i, j = n, m
 
