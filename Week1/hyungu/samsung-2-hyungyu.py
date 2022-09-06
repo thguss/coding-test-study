@@ -15,9 +15,9 @@ def bfs(x, y, color):
 
     while q:
         x, y = q.popleft()
-        for d in range(4):
-            nx = x + dx[d]
-            ny = y + dy[d]
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
             
             if 0 <= nx < n and 0 <= ny < n and not visited[nx][ny] and a[nx][ny] == color:
                 visited[nx][ny] = 1
