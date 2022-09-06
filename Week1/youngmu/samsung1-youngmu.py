@@ -5,6 +5,9 @@ DOWN = (0, 1)
 LEFT = (-1, 0)
 RIGHT = (1, 0)
 
+X = 0
+Y = 1
+
 mask = {
     LEFT: {
         (-1, -2): 0.02,
@@ -14,11 +17,11 @@ mask = {
         (-1, 2): 0.02
     },
     RIGHT: {
-        (-1, -2): 0.02,
+        (1, -2): 0.02,
         (0, -1): 0.01, (1, -1): 0.07, (2, -1): 0.1,
         (3, 0): 0.05,
         (0, 1): 0.01, (1, 1): 0.07, (2, 1): 0.1,
-        (-1, 2): 0.02
+        (1, 2): 0.02
     },
     UP: {
         (0, -3): 0.05,
@@ -36,11 +39,9 @@ mask = {
 
 
 def move(matrix, tornado_loc, direction):
-    global mask
-
     t_x, t_y = tornado_loc
-    d_x, d_y = tornado_loc[0] + direction[0], tornado_loc[1] + direction[1]
-    origin_dust = matrix[d_y][d_x]
+    new_x, new_y = tornado_loc[X] + direction[X], tornado_loc[Y] + direction[Y]
+    origin_dust = matrix[new_y][new_x]
     moved_dust = 0
     gone_dust = 0
     cur_mask = mask[direction]
@@ -54,15 +55,15 @@ def move(matrix, tornado_loc, direction):
         else:
             gone_dust += moving_dust
 
-    if 0 <= direction[0] + d_x < N and 0 <= direction[1] + d_y < N:
-        matrix[direction[1] + d_y][direction[0] + d_x] += (origin_dust - moved_dust)
+    if 0 <= direction[X] + new_x < N and 0 <= direction[Y] + new_y < N:
+        matrix[direction[Y] + new_y][direction[X] + new_x] += (origin_dust - moved_dust)
     else:
         gone_dust += (origin_dust - moved_dust)
 
-    matrix[d_y][d_x] = 0
+    matrix[new_y][new_x] = 0
 
-    tornado_loc[0] = d_x
-    tornado_loc[1] = d_y
+    tornado_loc[X] = new_x
+    tornado_loc[Y] = new_y
 
     return gone_dust
 
@@ -84,7 +85,7 @@ if __name__ == "__main__":
             for _ in range(i):
                 gone_dust += move(matrix, tornado_loc, UP)
 
-    for i in range(N - 1):
+    for i in range(N):
         gone_dust += move(matrix, tornado_loc, LEFT)
 
     print(gone_dust)
