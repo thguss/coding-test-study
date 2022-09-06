@@ -85,7 +85,8 @@ if __name__ == "__main__":
             for _ in range(i):
                 gone_dust += move(matrix, tornado_loc, UP)
 
-    for i in range(N):
+    # 어짜피 N-1까지만 보면 됨
+    for i in range(N - 1):
         gone_dust += move(matrix, tornado_loc, LEFT)
 
     print(gone_dust)
