@@ -13,8 +13,12 @@
 <br/>
 
 ### 📖 SOLVE
-|Week|삼성|카카오|당일문제|
+|Week|숙제1|숙제2|당일문제|
 |------|---|---|---|
 |Week1|[마법사 상어와 토네이도](https://www.acmicpc.net/problem/20057)||[상어 중학교](https://www.acmicpc.net/problem/21609)|
-|Week2|[마법사 상어와 파이어볼](https://www.acmicpc.net/problem/20056)|[두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667)|[마법사 상어와 복제](https://www.acmicpc.net/problem/23290)|
-|Week3|[마법사 상어와 파이어스톰](https://www.acmicpc.net/problem/20058)|[카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829)||
+|Week2|[카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829)|[두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667)|미정|
+
+### 보류
+[마법사 상어와 파이어볼](https://www.acmicpc.net/problem/20056)
+[마법사 상어와 복제](https://www.acmicpc.net/problem/23290)
+[마법사 상어와 파이어스톰](https://www.acmicpc.net/problem/20058)
