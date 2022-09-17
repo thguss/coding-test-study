@@ -15,10 +15,12 @@ def solution(queue1, queue2):
     while queue1 and queue2:
         if s1 == mid: return ans
     
-        if s1 > mid:
+        if s1 > mid:  # 중간값보다 크면 빼내야 함.
             temp = queue1.popleft()
             s1 -= temp
-        else:
+            # 기존 queue1에 있던 값을 빼내는 것이므로 queue2에 삽입 X (queue1의 합을 판단하는 것이므로)
+
+        else:         # 중간값보다 작으면 가져와야 함.
             temp = queue2.popleft()
             s1 += temp
             queue1.append(temp)
