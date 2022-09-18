@@ -1,28 +1,27 @@
-### 테스트1 시간초과
+import math
 
 def isPrime(num):
-    if num == 1: return False
-    for i in range(2, num):
+    if not num or num == "1": return False
+
+    num = int(num)
+    
+    for i in range(2, int(math.sqrt(num))+1):
         if num%i == 0: return False
+    
     return True
 
 def solution(n, k):
-    res = ""
-    while (n > 0):
-        res += str(n%k)
-        n //= k
-
     digit = ""
-    for i in range(len(res)-1, -1, -1):
-        digit += res[i]
     
-    arr = digit.split("0")
+    while (n > 0):
+        digit = str(n%k) + digit
+        n //= k
     
-    print(arr)
+    digit = digit.split("0")
+
     answer = 0
     
-    for num in arr:
-        if not num: continue
-        if isPrime(int(num)): answer += 1
-
+    for num in digit:
+        if isPrime(num): answer += 1
+        
     return answer
