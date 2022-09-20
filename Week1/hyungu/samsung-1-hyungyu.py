@@ -38,6 +38,7 @@ def move(x,y,dir):
     nx=x+dx[dir]    #알파 좌표
     ny=y+dy[dir]
     a=sand-sum_value    #알파에 있는 모래 양
+    
     if not(0<=nx<n and 0<=ny<n):
         value+=a
     else:
