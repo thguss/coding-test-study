@@ -18,6 +18,14 @@
 |Week1|[마법사 상어와 토네이도](https://www.acmicpc.net/problem/20057)||[상어 중학교](https://www.acmicpc.net/problem/21609)|
 |Week2|[(카카오, L2) 두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667)|[(카카오, L3) 파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)|X|
 |Week3|[(카카오, L2) k진수에서 소수 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/92335)|[(카카오, L3) 양과 늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343)|[(카카오, L3) 사라지는 발판](https://school.programmers.co.kr/learn/courses/30/lessons/92345)|
+|Week4]|아래 참고(Week4 숙제)||[행렬과 연산](https://school.programmers.co.kr/learn/courses/30/lessons/118670)|
+
+<br/>
+
+### Week4 숙제
+[신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334)
+[주차 요금 계산](https://school.programmers.co.kr/learn/courses/30/lessons/92341)
+[양궁대회](https://school.programmers.co.kr/learn/courses/30/lessons/92342)
 
 <br/>
 
