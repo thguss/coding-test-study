@@ -36,7 +36,7 @@ def solution(n, info):
             if shoot.count(i) > info[i]: continue
 
             temp = []
-            if not shoot.count(i) and shoot.count(i) < info[i]: 
+            if not shoot.count(i) and shoot.count(i) < info[i] and i != 10: 
                 temp = sorted(shoot+[i]*(info[i]+1))
             else: 
                 temp = sorted(shoot+[i])
