@@ -32,7 +32,7 @@ def solution(n, info):
                     break
             continue
         
-        for i in range(10):
+        for i in range(11):
             if shoot.count(i) > info[i]: continue
             temp = sorted(shoot+[i])
             if temp not in visited:
@@ -49,4 +49,4 @@ def solution(n, info):
 
     return answer
 
-print(solution(5, [2,1,1,1,0,0,0,0,0,0,0]))
+print(solution(	9, [0,0,1,2,0,1,1,1,1,1,1]))
