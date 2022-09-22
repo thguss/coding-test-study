@@ -32,8 +32,8 @@ def solution(n, info):
                     break
             continue
         
-        for i in range(11):
-            
+        for i in range(10):
+            if shoot.count(i) > info[i]: continue
             temp = sorted(shoot+[i])
             if temp not in visited:
                 visited.append(temp)
@@ -46,9 +46,6 @@ def solution(n, info):
     else:
       for score in result:
         answer[score] += 1
-    
-    for v in visited:
-      print(v)
 
     return answer
 
