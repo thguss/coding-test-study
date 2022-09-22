@@ -34,8 +34,14 @@ def solution(n, info):
         
         for i in range(11):
             if shoot.count(i) > info[i]: continue
-            temp = sorted(shoot+[i])
-            if temp not in visited:
+
+            temp = []
+            if not shoot.count(i) and shoot.count(i) < info[i]: 
+                temp = sorted(shoot+[i]*(info[i]+1))
+            else: 
+                temp = sorted(shoot+[i])
+
+            if temp and temp not in visited:
                 visited.append(temp)
                 queue.append(temp)
 
@@ -49,4 +55,4 @@ def solution(n, info):
 
     return answer
 
-print(solution(	9, [0,0,1,2,0,1,1,1,1,1,1]))
+print(solution(10, 	[0,0,0,0,0,0,0,0,3,4,3]))
