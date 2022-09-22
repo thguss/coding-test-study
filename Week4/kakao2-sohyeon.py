@@ -14,6 +14,7 @@ def solution(n, info):
     queue = deque()
     queue.append([])
 
+    # 시간복잡도 처리 : 방문처리
     visited = []
     
     result = []
@@ -36,6 +37,7 @@ def solution(n, info):
             if shoot.count(i) > info[i]: continue
 
             temp = []
+            # 시간복잡도 개선 : 0발이지 않고, 0점이 아니고, 어피치보다 적은 발이면 어피치+1발로 queue 삽입
             if not shoot.count(i) and shoot.count(i) < info[i] and i != 10: 
                 temp = sorted(shoot+[i]*(info[i]+1))
             else: 
