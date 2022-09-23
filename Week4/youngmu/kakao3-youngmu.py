@@ -46,3 +46,10 @@ def bfs(n, info):
 
 def solution(n, info):
     winList = bfs(n, info)
+    
+    if not winList:
+        return [-1]
+    elif len(winList) == 1:
+        return winList[0]
+    else:
+        return winList[-1]
