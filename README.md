@@ -28,4 +28,3 @@
 [마법사 상어와 복제](https://www.acmicpc.net/problem/23290) <br/>
 [마법사 상어와 파이어스톰](https://www.acmicpc.net/problem/20058) <br/>
 [행렬과 연산](https://school.programmers.co.kr/learn/courses/30/lessons/118670) <br/>
-[코딩 테스트 공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668) <br/>
