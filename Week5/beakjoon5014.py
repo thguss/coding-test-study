@@ -6,23 +6,22 @@ queue = deque()
 queue.append([s, 0])
 
 answer = -1
-visited = []
+visited = [0] * (f+1)
+visited[s] = 1
 
 while queue:
   floor, cnt = queue.popleft()
-
-  visited.append(floor)
 
   if floor == g:
     answer = cnt
     break
 
-  if 0 < floor + u <= f and floor+u not in visited:
+  if 0 < floor + u <= f and not visited[floor+u]:
     queue.append([floor+u, cnt+1])
-    visited.append(floor+u)
-  if 0 < floor - d <= f and floor-d not in visited:
+    visited[floor+u] = 1
+  if 0 < floor - d <= f and not visited[floor-d]:
     queue.append([floor-d, cnt+1])
-    visited.append(floor-d)
+    visited[floor-d] = 1
 
 if answer == -1:
   print("use the stairs")
