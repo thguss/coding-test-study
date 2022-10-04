@@ -21,6 +21,7 @@
 |Week4|[신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334) <br/> [주차 요금 계산](https://school.programmers.co.kr/learn/courses/30/lessons/92341)|[양궁대회](https://school.programmers.co.kr/learn/courses/30/lessons/92342) <br/> |[등산코스 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669)|
 |Week5|[스타트링크](https://www.acmicpc.net/problem/5014)|[로봇 청소기](https://www.acmicpc.net/problem/14503)|[코딩 테스트 공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668)|
 |Week6|[동전1(DP)](https://www.acmicpc.net/problem/2293)<br/>[주사위 굴리기(구현)](https://www.acmicpc.net/problem/14499)|[코딩 테스트 공부 이해하고 다시 풀어보기](https://school.programmers.co.kr/learn/courses/30/lessons/118668)|[소가 길을 건너간 이유6](https://www.acmicpc.net/problem/14466)|
+|Week7|[타일채우기(DP)](https://www.acmicpc.net/problem/2133)<br/>[주사위굴리기2(구현)](https://www.acmicpc.net/problem/23288)|[소가 길을 건너간 이유6 회고](https://www.acmicpc.net/problem/14466)|[미친 아두이노](https://www.acmicpc.net/problem/8972)|
 
 <br/>
 
